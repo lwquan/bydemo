@@ -1,0 +1,406 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+body {
+}
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+textarea {
+    resize: none;
+}
+
+/*防止拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+    background: #fff;
+    /*min-width: 480px!important;*/
+   /* overflow: hidden;*/
+    width: 100%;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+.header {
+    width: 100%;
+    height: 58px;
+    background-color:#191D3A;
+}
+.header-main .log{
+    width: 170px;
+    height: 58px;
+    overflow: hidden;
+    padding-left: 15px;
+    
+}
+.header-main .log a 
+{   
+    text-indent: -1000em;
+}
+.header-main-nav li{
+    width: 100px;
+    line-height: 58px;
+    border-right: 1px solid #252947;
+    float: left;
+    text-align: center;
+    
+}
+
+.header-main > .nav-button {
+	position: relative;
+	cursor:pointer;
+	width: 80px;
+	height: 60px;
+	border-right: solid 1px #ccc;
+	display: none;
+	float: left;
+}
+.header-main > .nav-button > .menu-san　{
+	display: block;
+	width: 80px;
+	height: 60px;
+	background-color: #fff;
+	line-height:60px;
+	padding: 0;
+	color: #fff;
+	
+}
+.header-main > .nav-button span {
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 1rem;
+    line-height: 1;
+    top: 20px;
+    left: 25px;
+    box-shadow: 0 0px 0 1px #fff,0 7px 0 1px #fff,0 14px 0 1px #fff;
+}
+.header-main-nav li a {
+    display:block;
+    height: 58px;
+    font-size: 14px;
+    color:#818496;
+}
+.header-main-nav li.curter {
+    width: 168px;
+    border-right: 0 none;
+
+
+    
+   
+}
+.header-main-nav li.focus {
+    background-color: #252947;
+    color:#ccc;
+}
+.header-main-nav li.curter a{
+    width: 98px;
+    margin-left: 48px;
+    margin-top: 12px;
+    display: block;
+    height: 32px;
+    line-height:32px ;
+    border-radius:5px; 
+    border: 1px solid #3ACA7A;
+    background-color: #26CE50;
+    color:#fff;
+}
+.banner {
+    width: 100%;
+    height: 410px;
+    background: url(../images/slide_02_2000x410.jpg) no-repeat;
+  
+}
+
+.activities {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+.activities .main li {
+    float: left;
+    width: 25%;
+
+    text-align: center;
+}
+.activities .main li .title {
+    margin-top: 13px;
+    line-height: 22px;
+}
+.activities .main li.curter {
+    margin-right: 0;
+    width: 217px;
+}
+.activities .main li p {
+    text-align: center;
+}
+.activities .main li a{
+    line-height: 12px;
+    font-size: 12px;
+    color: green;
+    padding-right: 10px;
+    background: url(../images/sanjiaoxing.png) no-repeat right center;
+
+}
+.activities .nav {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin-top:-5px;
+    width: 100px;
+    height: 10px;
+    background-color:#fff;
+    margin-left:-54px;
+    text-align: center;
+    padding-left: 17px;
+
+}
+
+.activities .nav  li {
+    float: left;
+    height: 10px;
+    width: 10px;
+    background-color: #B5C0CB;
+    margin-right: 14px;
+    border-radius:4px;
+
+}
+.activities .nav li.focus{
+    background-color: #2FBC71;
+}
+.news-list {
+     width: 100%;
+     padding: 30px 10px;
+}
+.aside-left {
+    width: 40%;
+    
+    float: left;
+    background:url(../images/bynewsbg.jpg) no-repeat;
+    margin-left: 20px;
+    padding: 0 20px;
+    padding-top: 109px;
+
+    
+}
+.aside-left li {
+    float: left;
+    width: 460px;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.aside-left li span{
+    margin-right: 22px;
+}
+.aside-right{
+    background:url(../images/byhrbg3.jpg) no-repeat;
+    float: left;
+    width: 50%;
+    height: 300px;
+}
+.section-main {
+	overflow: hidden;
+    width: 100%;
+    padding-top: 50px;
+
+    background: url(../images/indexmainbg.jpg) no-repeat center bottom;
+}
+.footer {
+    height: 91px;
+    background-color:#191D3A;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.box-left {
+	position:fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 270px;
+	height: 100%;
+	background-color: #252947;
+	display: none;
+	/*transform:translate3d(0%, 0, 0);*/
+		
+}
+
+.box-left > .box-left-nav > ul > li > a{
+	
+	display: block;
+	line-height: 60px;
+	color:#ccc;
+	border-bottom: 1px solid #ccc;
+	padding-left: 30px;
+	font-size: 16px;
+	
+}
+.box-left > .box-left-nav ul > li > a:hover{
+	background-color:#EEEEEE;
+	color: #000;
+	
+	
+	
+}
+.box-left > .box-left-nav ul > .title {
+	line-height: 60px;
+	font-size: 18px;
+	color:#888;
+	border-bottom: 1px solid #e5e5e5;
+	padding-left: 20px;
+	
+}
+@media (max-width : 640px) {
+	.header-main-nav {
+		display: none;
+	}
+	.header-main > .nav-button {
+		display: block;
+	}
+	.banner  {
+		
+		
+    background: url(../images/slide_02_640x340.jpg) no-repeat ;
+   
+    background-size: cover;
+	}
+	.section-main .activities .nav {
+		display: none;
+	}
+	.section-main .activities > .main li{
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.section-main .activities > .main li img{
+		width:80%;
+		height: 200px;
+		
+	}
+	.activities .main li a {
+		font-size: 20px;
+	}
+	.section-main > .aside {
+		width: 100%;
+	}
+	.aside-right {
+		display: none;	
+	}
+	.aside-left {
+		width: 100%;
+	}
+	.aside-left li{
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+		
+	}
+}
+.ml {
+	margin-left: 270px;
+}
+.show {
+	display: block;
+}
